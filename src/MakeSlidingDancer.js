@@ -17,17 +17,11 @@ MakeSlidingDancer.prototype.step = function() {
   // oldStep();
   // this.oldStep();
 
-if (this._count){
 this.$node.removeClass('dancer')
 this.$node.addClass('dancerRed')
-this._count = false;
-} else{
-  this.$node.removeClass('dancerRed')
-  this.$node.addClass('dancer');
-  this._count = true;
-}
 
-setTimeout(this.step.bind(this), this.timeBetweenSteps);
+
+// setTimeout(this.step.bind(this), this.timeBetweenSteps);
 
   // toggle() is a jQuery method to show/hide the <span> tag.
   // See http://api.jquery.com/category/effects/ for this and
@@ -38,7 +32,7 @@ setTimeout(this.step.bind(this), this.timeBetweenSteps);
 MakeSlidingDancer.prototype.lineUp = function(y){
   
  // var elementWidth = $('.dancer').css('border-radius') * 3;
-  var x = $(window).width() - 30;
+  var x = $(window).width() - 100;
 
    this.setPosition(y,x);
 }

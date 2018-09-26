@@ -15,8 +15,14 @@ MakeGrowDancer.prototype.step = function() {
   // call the old version of step at the beginning of any call to this new version of step
   // oldStep();
   // this.oldStep();
-  setTimeout(this.step.bind(this), this.timeBetweenSteps);
+  this.$node.removeClass('dancer');
+  this.$node.addClass('partner');
+  this.$node.addClass('animated');
+  this.$node.addClass('infinite');
+  this.$node.addClass('swing');
 
+  
+  
 
   // toggle() is a jQuery method to show/hide the <span> tag.
   // See http://api.jquery.com/category/effects/ for this and

@@ -7,10 +7,12 @@ body{
   background-position: bottom;
   background-color:#444;
   font-size: 18px;
-  background-image:url("img/charlotte-coneybeer-146590-unsplash.jpg");
+  background-image:url("img/hallway.jpg");
   background-size: cover;
   background-color: rgba(255, 255, 255, 0.3);
   background-blend-mode: lighten;
+  z-index: -1;
+
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
@@ -34,10 +36,153 @@ body, a:link, a:visited, a:active{
   position:absolute;
 
 }
+.dancerRedBig{
+  background:url("img/kanye.gif");
 
-.dancerRed{
-  border:10px solid red;
-  border-radius:10px;
+background-size: 200px;
+width: 110px;
+height: 110px;
+
   position:absolute;
 
+  -webkit-animation: xAxis 2.5s infinite cubic-bezier(0.02, 0.01, 0.21, 1);
+  animation: xAxis 2.5s infinite cubic-bezier(0.02, 0.01, 0.21, 1);
+
 }
+.dancerRed{
+  background:url("img/kanye.gif");
+
+background-size: 100px;
+width: 55px;
+height: 55px;
+
+  position:absolute;
+
+  -webkit-animation: xAxis 2.5s infinite cubic-bezier(0.02, 0.01, 0.21, 1);
+  animation: xAxis 2.5s infinite cubic-bezier(0.02, 0.01, 0.21, 1);
+
+}
+.dancerRed:hover{
+  background:url("img/kanyeHead.gif");
+  background-size: 200px;
+width: 200px;
+height: 200px;
+}
+.dancerRedt::after {
+  content: '';
+  display: block;
+  background:url("img/kanye.gif");
+  background-size: 75px;
+  width: 40px;
+  height: 40px;
+  -webkit-animation: yAxis 2.5s infinite cubic-bezier(0.3, 0.27, 0.07, 1.64);
+  animation: yAxis 2.5s infinite cubic-bezier(0.3, 0.27, 0.07, 1.64);
+}
+
+@-webkit-keyframes yAxis {
+  50% {
+    -webkit-animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
+    animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+  }
+}
+
+@keyframes yAxis {
+  50% {
+    -webkit-animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
+    animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+  }
+}
+
+@-webkit-keyframes xAxis {
+  50% {
+    -webkit-animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
+    animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+  }
+}
+
+@keyframes xAxis {
+  50% {
+    -webkit-animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
+    animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+  }
+}
+
+.partner{
+  background:url("img/lilPump.gif");
+
+  background-size: 100px;
+  width: 55px;
+  height: 55px;
+  
+   position:absolute;
+
+   -webkit-transform-origin: top center;
+   transform-origin: top center;
+   -webkit-animation-name: swing;
+   animation-name: swing;
+
+
+}
+@-webkit-keyframes swing {
+  20% {
+    -webkit-transform: rotate3d(0, 0, 1, 15deg);
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+
+  40% {
+    -webkit-transform: rotate3d(0, 0, 1, -10deg);
+    transform: rotate3d(0, 0, 1, -10deg);
+  }
+
+  60% {
+    -webkit-transform: rotate3d(0, 0, 1, 5deg);
+    transform: rotate3d(0, 0, 1, 5deg);
+  }
+
+  80% {
+    -webkit-transform: rotate3d(0, 0, 1, -5deg);
+    transform: rotate3d(0, 0, 1, -5deg);
+  }
+
+  to {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+
+@keyframes swing {
+  20% {
+    -webkit-transform: rotate3d(0, 0, 1, 15deg);
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+
+  40% {
+    -webkit-transform: rotate3d(0, 0, 1, -10deg);
+    transform: rotate3d(0, 0, 1, -10deg);
+  }
+
+  60% {
+    -webkit-transform: rotate3d(0, 0, 1, 5deg);
+    transform: rotate3d(0, 0, 1, 5deg);
+  }
+
+  80% {
+    -webkit-transform: rotate3d(0, 0, 1, -5deg);
+    transform: rotate3d(0, 0, 1, -5deg);
+  }
+
+  to {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+
+

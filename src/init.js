@@ -45,5 +45,15 @@ $(document).ready(function() {
     }
   })
 
+  $('.dancerRed').mouseOver(function(){
+    
+    $('.dancerRed').css({
+      'background-size': '200px',
+      'width': '110px',
+      'height': '110px'
+    })
+    })
+   
+
 });
 
